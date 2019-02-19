@@ -102,7 +102,7 @@ update_cover() {
 		get_cover_online
 	fi
 
-	# resize the image to 250x250
+	# resize the image to $DIMENSION
 	if [ $ARTLESS == false ]; then
 		convert $COVER -resize $DIMENSION $COVER
 		echo "kunst: resized album art to $DIMENSION"
